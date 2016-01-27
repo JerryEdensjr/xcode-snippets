@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>hitTest</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+  
+  UIView *hitView = nil;
+  NSArray *subViews = self.subviews;
+  
+  for (NSInteger idx = [subViews count] - 1; idx &gt;= 0; --idx) {
+
+    UIView *view = subViews[idx];
+    
+    if (view == self) continue;
+    
+    CGPoint convertedPoint = [view convertPoint:point fromView:self];
+    hitView = [view hitTest:convertedPoint withEvent:event];
+    
+    if (hitView == self) {
+      
+      return nil;
+    
+    } else if (hitView) {
+      
+      return hitView;
+    }
+  }
+  
+  return hitView;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>388BC55E-AF6A-450A-8A53-9C5C31C0A93D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>hitText</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

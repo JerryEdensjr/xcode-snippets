@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>logrect</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>  NSLog(@"%s[%d] %0.2f, %0.2f, %0.2f, %0.2f", __PRETTY_FUNCTION__, __LINE__,
+        &lt;#rect#&gt;.origin.x,
+        &lt;#rect#&gt;.origin.y,
+        &lt;#rect#&gt;.size.width,
+        &lt;#rect#&gt;.size.height);
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A6C76ACA-9199-4690-9B71-AE94901882CE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>log Rect</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
